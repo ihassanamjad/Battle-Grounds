@@ -27,7 +27,7 @@ export default function ConfettiEffect({
         ticks: 150,
         startVelocity: 25,
         decay: 0.9,
-        shapes: ['circle']
+        shapes: ['circle' as const]
       },
       milestone: {
         particleCount: 120,
@@ -38,7 +38,7 @@ export default function ConfettiEffect({
         ticks: 200,
         startVelocity: 35,
         decay: 0.85,
-        shapes: ['star']
+        shapes: ['star' as const]
       },
       victory: {
         particleCount: 200,
@@ -49,7 +49,7 @@ export default function ConfettiEffect({
         ticks: 300,
         startVelocity: 40,
         decay: 0.8,
-        shapes: ['star', 'circle']
+        shapes: ['star' as const, 'circle' as const]
       },
       'battle-win': {
         particleCount: 250,
@@ -60,7 +60,7 @@ export default function ConfettiEffect({
         ticks: 250,
         startVelocity: 45,
         decay: 0.75,
-        shapes: ['star', 'circle', 'square']
+        shapes: ['star' as const, 'circle' as const, 'square' as const]
       },
       firework: {
         particleCount: 300,
@@ -71,7 +71,7 @@ export default function ConfettiEffect({
         ticks: 400,
         startVelocity: 60,
         decay: 0.6,
-        shapes: ['star', 'circle']
+        shapes: ['star' as const, 'circle' as const]
       },
       sparkle: {
         particleCount: 150,
@@ -82,7 +82,7 @@ export default function ConfettiEffect({
         ticks: 250,
         startVelocity: 30,
         decay: 0.7,
-        shapes: ['star']
+        shapes: ['star' as const]
       }
     }
 

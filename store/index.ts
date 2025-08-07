@@ -75,9 +75,9 @@ export const useBattleGroundsStore = create<BattleGroundsState>((set, get) => ({
         
         // Calculate badges
         const badges = []
-        if (totalPremium >= 25000) badges.push({ id: '25k', name: '25K Club', icon: '🏆', color: 'gold' })
-        if (totalPremium >= 30000) badges.push({ id: '30k', name: '30K Qualifier', icon: '💪', color: 'green' })
-        if (goalPercentage >= 100) badges.push({ id: 'goal', name: 'Goal Achiever', icon: '🎯', color: 'blue' })
+        if (totalPremium >= 25000) badges.push({ id: '25k', name: '25K Club', icon: '🏆', color: 'gold', description: 'Reached $25K in premium' })
+        if (totalPremium >= 30000) badges.push({ id: '30k', name: '30K Qualifier', icon: '💪', color: 'green', description: 'Reached $30K in premium' })
+        if (goalPercentage >= 100) badges.push({ id: 'goal', name: 'Goal Achiever', icon: '🎯', color: 'blue', description: 'Achieved contest goal' })
         
         return {
           agent,

@@ -36,9 +36,9 @@ const mockContests = [
 ]
 
 const mockDeals = [
-  { id: '1', agentId: '1', contestId: '1', premium: 15000, linesOfBusiness: ['Auto', 'Home'], notes: 'Bundle deal', date: '2024-01-15', status: 'approved', createdAt: '2024-01-15' },
-  { id: '2', agentId: '2', contestId: '1', premium: 12000, linesOfBusiness: ['Auto'], notes: 'New customer', date: '2024-01-16', status: 'approved', createdAt: '2024-01-16' },
-  { id: '3', agentId: '3', contestId: '1', premium: 18000, linesOfBusiness: ['Auto', 'Home', 'Life'], notes: 'Multi-line', date: '2024-01-17', status: 'approved', createdAt: '2024-01-17' },
+  { id: '1', agentId: '1', contestId: '1', premium: 15000, linesOfBusiness: ['Auto', 'Home'], notes: 'Bundle deal', date: '2024-01-15', status: 'approved' as const, createdAt: '2024-01-15' },
+  { id: '2', agentId: '2', contestId: '1', premium: 12000, linesOfBusiness: ['Auto'], notes: 'New customer', date: '2024-01-16', status: 'approved' as const, createdAt: '2024-01-16' },
+  { id: '3', agentId: '3', contestId: '1', premium: 18000, linesOfBusiness: ['Auto', 'Home', 'Life'], notes: 'Multi-line', date: '2024-01-17', status: 'approved' as const, createdAt: '2024-01-17' },
 ]
 
 export default function HomePage() {
