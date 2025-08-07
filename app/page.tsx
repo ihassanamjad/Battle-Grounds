@@ -28,8 +28,8 @@ const mockContests = [
     isActive: true,
     participants: ['1', '2', '3', '4'],
     prizes: [
-      { id: '1', name: 'Champion Trophy', description: 'Top performer', threshold: 500000, type: 'final', isUnlocked: false },
-      { id: '2', name: '25K Club Badge', description: 'Reach $25K milestone', threshold: 25000, type: 'milestone', isUnlocked: false },
+      { id: '1', name: 'Champion Trophy', description: 'Top performer', threshold: 500000, type: 'final' as const, isUnlocked: false },
+      { id: '2', name: '25K Club Badge', description: 'Reach $25K milestone', threshold: 25000, type: 'milestone' as const, isUnlocked: false },
     ],
     createdAt: '2024-01-01'
   }
