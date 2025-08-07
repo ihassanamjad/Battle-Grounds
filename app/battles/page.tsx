@@ -32,6 +32,19 @@ const mockBattles = [
     agent2Score: 41000,
     status: 'active' as const,
     createdAt: '2024-01-01'
+  },
+  {
+    id: '3',
+    contestId: '1',
+    agent1Id: '1',
+    agent2Id: '3',
+    startDate: '2024-01-01',
+    endDate: '2024-01-15',
+    agent1Score: 35000,
+    agent2Score: 32000,
+    status: 'completed' as const,
+    winnerId: '1',
+    createdAt: '2024-01-01'
   }
 ]
 
@@ -168,9 +181,13 @@ export default function BattlesPage() {
                         <Flame className="w-6 h-6 text-battle-fire" />
                         <h3 className="text-xl font-bold text-gray-900">Battle #{battle.id}</h3>
                       </div>
-                      <div className="text-sm text-gray-500">
-                        {battle.status === 'active' ? 'Active' : 'Completed'}
-                      </div>
+                                             <div className={`text-sm px-2 py-1 rounded-full ${
+                         battle.status === 'active' 
+                           ? 'bg-green-100 text-green-800' 
+                           : 'bg-blue-100 text-blue-800'
+                       }`}>
+                         {battle.status === 'active' ? 'Active' : 'Completed'}
+                       </div>
                     </div>
 
                     {/* Agents */}
