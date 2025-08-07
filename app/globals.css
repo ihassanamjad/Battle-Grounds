@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .battle-card {
+    @apply bg-white rounded-lg shadow-lg border-2 border-gray-200 hover:shadow-xl transition-all duration-300;
+  }
+  
+  .battle-card-gold {
+    @apply border-battle-gold shadow-battle-gold/20;
+  }
+  
+  .battle-card-silver {
+    @apply border-battle-silver shadow-battle-silver/20;
+  }
+  
+  .battle-card-bronze {
+    @apply border-battle-bronze shadow-battle-bronze/20;
+  }
+  
+  .progress-bar {
+    @apply h-3 bg-gray-200 rounded-full overflow-hidden;
+  }
+  
+  .progress-fill {
+    @apply h-full bg-gradient-to-r from-battle-success to-battle-fire transition-all duration-500;
+  }
+  
+  .tv-mode {
+    @apply bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white;
+  }
+  
+  .confetti-container {
+    @apply fixed inset-0 pointer-events-none z-50;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .glow-text {
+    text-shadow: 0 0 10px currentColor;
+  }
+} 
